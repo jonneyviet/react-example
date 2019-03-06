@@ -1,0 +1,44 @@
+.gird_col{
+    
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    >div{
+        box-sizing: border-box;
+    }
+    &_1{
+        >div{
+            width: 100%;
+        }
+    }
+    &_2{
+        >div{
+            width: 50%;
+            &:nth-child(n+3){
+                margin-top: 5px;
+            }
+        }
+    }
+    &_3{
+        >div{
+            width: 33.3333%;
+        }
+    }
+    &_sm{
+        max-width: 320px;
+        margin: 0px auto;
+    }
+    &_md{
+        max-width: 640px;
+        margin: 0px auto;
+    }
+    &_xl{
+        max-width: 1024px;
+        margin: 0px auto;
+    }
+    & > *{
+        margin-top: 0px!important;
+    }
+}

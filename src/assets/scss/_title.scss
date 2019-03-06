@@ -1,0 +1,48 @@
+._title{
+    border-bottom: solid 1px $border-color;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content:space-between;
+    min-width: 100%;
+    padding-bottom: 10px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    &_left{
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+        justify-content:center;
+        span{
+            margin: 0px;
+            font-size: 1.6rem;
+            white-space: nowrap;
+            display: block;
+            margin-left: 10px;
+            line-height: 2;
+            font-weight: bold;
+        }
+    }
+    &_icon{
+        border-radius: 50%;
+        width: 30px;
+        height: 30px;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content:center;
+        text-align: center;
+        text-decoration: none;
+        color: $gray-800;
+        margin: 0px;
+        i{
+            margin: 0px;
+            font-size: 2.1rem;
+        }
+    }
+}
+a._title_icon{
+    &:hover{
+        background-color: $border-color;
+    }
+}

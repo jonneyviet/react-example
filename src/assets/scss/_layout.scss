@@ -1,0 +1,74 @@
+/**
+ * Layout
+ */
+ body{
+    min-width: 1024px;
+ }
+.container{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-items: center;
+    background-color: #fff;
+    overflow: hidden;
+}
+.header{
+    background-color: $primary;
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-items: center;
+    padding: 0px 15px;
+    box-sizing: border-box;
+}
+.nav{
+    width: 200px;
+    min-height: 420px;
+    background-color: $gray-300;
+}
+.main{
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-items: center;
+    overflow: auto;
+    height: 100%;
+    min-width: 840px;
+    box-sizing: border-box;
+    >div{
+        display: block;
+        width: 100%;
+    }
+}
+.container_main{
+    position: relative;
+    background-color:transparent;
+    min-width: 840px;
+}
+/**
+ * Layout show component
+ */
+ul.layoutComponent{
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    flex-direction: row;
+    li{
+        width: 33.3333%;
+        text-align: center;
+        >span{
+            display: block;
+            margin-top: 15px;
+        }
+    }
+}
+.contentComponent{
+    h2{
+        font-size: 1.6rem;
+    }
+}
